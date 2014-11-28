@@ -1,0 +1,21 @@
+<div class="col-md-12" ng-controller="DataTableCtrl">
+    <div class="table-responsive">
+        <table datatable="ng" class="row-border hover table table-striped table-condensed table-hover">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="person in persons" table-row>
+                <td row-details>Link</td>
+                <td>{{ person.id }}</td>
+                <td>{{ person.firstName }}</td>
+                <td>{{ person.lastName }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
