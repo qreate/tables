@@ -10,15 +10,9 @@ angular.module('tables').directive('rowDetails', function() {
 	return {
 		restrict: 'EA',
 		replace: true,
-		scope: {
-
-		},
+        transclude: true,
 		templateUrl: 'directive/row-details/row-details.html',
 		link: function(scope, element, attrs, fn) {
-            scope.expand = function(){
-                alert('hepp');
-            }
-
 
 		}
 	};

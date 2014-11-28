@@ -1,18 +1,14 @@
 <tr>
-    <td>
-        <table>
-            <tr class="table-row" ng-click="showDetails()">
-                <td>Hej</td>
-                <td>Hej</td>
-                <td>Hej</td>
-                <td>Hej</td>
-                <td>Hej</td>
-            </tr>
-            <tr class="table-details" style="display:none;">
-                <td colspan="5">Details</td>
-            </tr>
-        </table>
+    <td colspan="3" style="padding: 0;">
+            <table style="width: 100%;">
+                <tr class="table-row">
+                    <td style="width: 20%;padding: 3px 5px;" ng-click="showDetails()">{{ person.id }}</td>
+                    <td style="width: 40%;padding: 3px 0;">{{ person.firstName }}</td>
+                    <td style="width: 40%;padding: 3px 0;">{{ person.lastName }}</td>
+                </tr>
+                <tr ng-show="person.details" class="table-details">
+                    <td row-details></td>
+                </tr>
+            </table>
     </td>
-
-
 </tr>
